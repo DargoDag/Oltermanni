@@ -1,0 +1,30 @@
+@font-face {
+    $font-regular: "Cond-Pro-Regular";
+    font-family: 'Cond-Pro';
+    font-weight: $font-weight-regular;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-regular}.woff") format("woff"),
+         url("#{$font-path}/#{$font-regular}.woff2") format("woff2"),
+         url("#{$font-path}/#{$font-regular}.ttf") format("truetype");
+}
+
+@font-face {
+    $font-medium: "Cond-Pro-Medium";
+    font-family: 'Cond-Pro';
+    font-weight: $font-weight-medium;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-medium}.woff") format("woff"),
+         url("#{$font-path}/#{$font-medium}.woff2") format("woff2"),
+         url("#{$font-path}/#{$font-medium}.ttf") format("truetype");
+}
+
+@font-face {
+    $font-bold: "Cond-Pro-Bold";
+    font-family: 'Cond-Pro';
+    font-weight: $font-weight-bold;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-bold}.woff") format("woff"),
+         url("#{$font-path}/#{$font-bold}.woff2") format("woff2"),
+         url("#{$font-path}/#{$font-bold}.ttf") format("truetype");
+}
+ 

@@ -1,0 +1,36 @@
+/**
+* Vendors
+*/
+// Пример подключения плагинов
+// @import "~plugin-name.scss";
+
+
+@import "~normalize.css";
+
+/**
+* Abstracts
+*/
+@import "abstracts/breakpoint";
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+
+/**
+* Base
+*/
+@import "base/fonts";
+@import "base/generic";
+
+
+/*
+* Components
+*/
+//  Пример подключения стилей блоков
+@import "blocks/header";
+@import "blocks/cheese";
+@import "blocks/features";
+@import "blocks/participants";
+@import "blocks/footer";
+@import "blocks/modal";

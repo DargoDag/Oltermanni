@@ -1,0 +1,134 @@
+.participants {
+    padding: 36px 0 120px;
+    background: linear-gradient(180.05deg, #EDEDED 22.63%, #FFFFFF 99.95%);
+    position: relative;
+
+    @include breakpoint($laptopS) {
+        padding: 66px 0 120px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -21px;
+        left: 15%;
+        width: 45px;
+        height: 41px;
+        background-image: url('../images/participants-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include breakpoint($laptopS) {
+            width: 55px;
+            height: 50px;
+            left: 16.45%;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 46px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-brown;
+
+        @include breakpoint($tabletS) {
+            font-size: 36px;
+            line-height: 46px;
+        }
+    }
+    .swiper {
+        text-align: center;
+        padding-top: 15px;
+
+        @include breakpoint($laptopS) {
+            padding-top: 23px;
+            max-width: 1173px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        &-slide {
+            width: 141px;
+
+            @include breakpoint($laptopS) {
+                width: auto;
+            }
+        }
+
+        .slide {
+            &__img {
+                img {
+                    max-width: 141px;
+                    margin: 0 auto;
+
+                    @include breakpoint($laptopS) {
+                        max-width: 198px;
+                    }
+                }
+            }
+            &__descr {
+                font-size: 18px;
+                line-height: 22px;
+                color: #5A1404;
+                margin: 22px 0 0;
+            }
+        }
+
+        #participantsPagination {
+            margin-top: 50px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            background-color: $color-brown;
+            border: 1px solid $color-brown;
+            opacity: 1;
+            transition: 0.3s all ease-in;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 11px;
+            height: 11px;
+            background-color: #F8F8F8;
+            border: 1px solid $color-brown;
+        }
+
+        #part-prev, #part-next {
+            display: none;
+            position: absolute;
+            z-index: 2;
+            top: 40%;
+            right: 5px;
+            width: 21px;
+            height: 21px;
+            border-left: 5px solid #5a1404;
+            border-bottom: 5px solid #5a1404;
+            border-radius: 2px;
+            transform: translateY(-50%) rotate(-135deg);
+            cursor: pointer;
+            transition: 0.2s all linear;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            @include breakpoint($laptopS) {
+                display: block;
+            }
+        }
+
+        #part-prev {
+            left: 5px;
+            right: auto;
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+}

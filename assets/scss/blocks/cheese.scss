@@ -1,0 +1,50 @@
+.cheese {
+    background: linear-gradient(180deg, #ECB200 0%, #FFCF00 200%);
+    position: relative;
+    padding-bottom: 100px;
+
+    @include breakpoint($laptop) {
+        padding-bottom: 110px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &__btn {
+        font-family: $font-family;
+        width: 164px;
+        height: 47px;
+        background-color: $color-red;
+        border: 6px solid #EDEDED;
+        border-radius: 46px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: $white;
+        display: block;
+        position: absolute;
+        bottom: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0px 0px 37px #E7E7E7);
+        cursor: pointer;
+        transition: 0.2s all ease-out;
+
+        &:hover {
+            font-size: 16px;
+        }
+
+        @include breakpoint($tabletS) {
+            width: 234px;
+            height: 69px;
+            border: 8px solid #EDEDED;
+            font-size: 16px;
+
+            &:hover {
+                font-size: 18px;
+            }
+        }
+    }
+}
